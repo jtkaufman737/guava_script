@@ -9,15 +9,52 @@ var settingUpNames = function() {
 }
 
 var start = function () {
-	tile1a.innerHTML='';	
+	tile1a.innerHTML='';
+	tile1a.addEventListener('click', function(){
+		evenAndOddTurns(tile1a);
+		console.log('Fn addingClickListener ran')
+	})	
+
 	tile1b.innerHTML='';
+	tile1b.addEventListener('click', function(){
+		evenAndOddTurns(tile1b);
+	})
+
 	tile1c.innerHTML='';
+	tile1c.addEventListener('click', function(){
+		evenAndOddTurns(tile1c);
+	})
+
 	tile2a.innerHTML='';
+	tile2a.addEventListener('click', function(){
+		evenAndOddTurns(tile2a);
+	})
+
 	tile2b.innerHTML='';
+	tile2b.addEventListener('click', function(){
+		evenAndOddTurns(tile2b);
+	})
+
 	tile2c.innerHTML='';
+	tile2c.addEventListener('click', function(){
+		evenAndOddTurns(tile2c);
+	})
+
 	tile3a.innerHTML='';
+	tile2c.addEventListener('click',function(){
+		evenAndOddTurns(tile3a);
+	})
+
 	tile3b.innerHTML='';
+	tile3b.addEventListener('click',function(){
+		evenAndOddTurns(tile3b);
+	})
+
 	tile3c.innerHTML='';
+	tile3c.addEventListener('click', function(){
+		evenAndOddTurns(tile3c);
+	})
+
 	playerOneBox.innerHTML='';
 	playerTwoBox.innerHTML='';
 	//Good catch: set it up to clear names right before invoking settingUpNames, allowing them to re-create id's for player 1 & 2
@@ -29,16 +66,13 @@ var start = function () {
 
 start();
 
-var addingClickListener = function (){
-	document.querySelectorAll('.tiles');
-	this.addEventListener('click', function(){
-		evenAndOddTurns();
-		console.log('Fn addingClickListener ran')
-	})
-}
+// var addingClickListener = function (){
+// 	document.querySelectorAll('.tiles');
+//Feel 
 
 var evenAndOddTurns = function() {
-    if (innerHTML == '') {
+	// document.querySelectorAll('.tiles');
+    if (tiles.innerHTML == '') {
       //Oh shit, just realized my logic is close but not
       //all the way there
       //I need to add an event listener to the squares
@@ -54,7 +88,7 @@ var evenAndOddTurns = function() {
           i = i + 1;
         }
       }
-    } else if (innerHTML != '') {
+    } else if (tiles.innerHTML != '') {
       alert('Sorry,too slow!');
 
     }
