@@ -72,7 +72,7 @@ start();
 
 var evenAndOddTurns = function() {
 	// document.querySelectorAll('.tiles');
-    if (tiles.innerHTML == '') {
+    if (this.innerHTML == '') {
       //Oh shit, just realized my logic is close but not
       //all the way there
       //I need to add an event listener to the squares
@@ -80,15 +80,15 @@ var evenAndOddTurns = function() {
       //and give them a whole other class to route them
 
       for (var i = 0; i < 9; i++) { //trying to set up a counter, but the FOR loop looks sort of wrong, somehow? Not sure about that one...
-        if (i % 2 === 0) {
-          onclick.innerHTML = X; // I feel like maybe I can't use onclick this way...need to look up
+        if (i%2 === 0) {
+          onclick.innerHTML = 'X'; // I feel like maybe I can't use onclick this way...need to look up
           i = i + 1;
-        } else if (i % 2 !== 0) {
-          onclick.innerHTML = O;
+        } else if (i%2 != 0) {
+          onclick.innerHTML = 'O';
           i = i + 1;
         }
       }
-    } else if (tiles.innerHTML != '') {
+    } else if (this.innerHTML != '') {
       alert('Sorry,too slow!');
 
     }
