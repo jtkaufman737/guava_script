@@ -3,8 +3,9 @@ var player1 = prompt('What is your name?', 'type name'); //got working & saved t
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
 
 var settingUpNames = function() {
-	playerTwoBox.innerHTML= 'Player One : ' + player2;
 	playerOneBox.innerHTML= 'Player Two : ' + player1;
+	playerTwoBox.innerHTML= 'Player One : ' + player2;
+	//Tested & works: Also not the ideal way to do this, I wanted again to get element by id and append child, but couldn't figure it out. I'm rolling with this and will return to it time permitting
 }
 
 var start = function () {
@@ -17,6 +18,8 @@ var start = function () {
 	tile3a.innerHTML='';
 	tile3b.innerHTML='';
 	tile3c.innerHTML='';
+	playerOneBox.innerHTML='';
+	playerTwoBox.innerHTML='';
 	settingUpNames();
 	//Tested, and I did try to accomplish this more DRYly using a getElementById and change a whole class at once but couldnt get it working
 	//I have decided to get everything functioning then retool if time allows
