@@ -2,11 +2,19 @@
 var player1 = prompt('What is your name?', 'type name'); //got working & saved to variable
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
 
-// var start = function () {
-		
-// 	}
+var start = function () {
+	tile1a.innerHTML='';	
+	tile1b.innerHTML='';
+	tile1c.innerHTML='';
+	tile2a.innerHTML='';
+	tile2b.innerHTML='';
+	tile2c.innerHTML='';
+	tile3a.innerHTML='';
+	tile3b.innerHTML='';
+	tile3c.innerHTML='';
+	}
 
-// start();
+start();
 // 	//onload prompts for names
 // 	//runs setnames function which prompts for names, then displays them
 // 	//makes sure innerHTML for the squares is set to ''
