@@ -1,33 +1,27 @@
-//onload shows board, prompts for player one and player two name
-//
+var start = function () {
+	//onload prompts for names
+	//runs setnames function which prompts for names, then displays them
+	//makes sure innerHTML for the squares is set to ''
+}
 
+var setNames = function () {
+	//prompt: gets names
+	//gets element by id, name blurbs or whatever I end up calling them
+	//sets blurb inner html to be what the prompt returned
+}
 
-//GAME LOGIC
-//If an odd turn, onclick set div to x
-//If an even turn, onclick set div to o
-//On all turns, set a status of clicked to tile (so it can't be reclicked)
-//After click run a function evaluating if there are three tiles of the same type in a row
-//If the answer is yes, run an alert with the winner
+var evenAndOddTurns = function () {
+	//say for clicks on a square, the first time it will be an x, second time it will be an o
+	//need to dig into the logic here, I'm not sure how I would do this
+}
 
-//Reset button puts all the tiles back to having no value, and ideally if I can get player names populating 
-//resets the prompt asking for their names again
+var checkingTheScore = function(){
+	// checks if there is  a win
+	//if else statement, if win = set up win sequence of events, else {nuttin}
+	// if win is selected, trigger win function
 
-//		EVALUATING WINS
- 	 //Could assign number values and use a modulo so that certain matches would all be divisible by the same number
- 	 //but ironically while more DRY might get kind of mathematically complicated
- 	 //Could use some kind of letter & number combo to mark rows and columns
- 	 //Could just use letters
-	 // Upon thought, I think this is the best way: 
-
-	   //        Column A    Column B     Column C 
-	   // Row1      1A         1B           1C
-	   // Row2      2A         2B           2C
-	   // Row3      3A         3B           3C
-
-//EDGE CASE
-//Diagonal win: no way around it, this is a toughie. I think I will just have to use a not particularly dry
-// if div 2B inner html = 1a && 3c html, then..../if div 2b innerhtml = 1c and 3a html then...
-
-//ERROR LOG
-
-//RESOLVED ERROR LOG
+var winnerWinner = function() {
+	//change color of winners name console box
+	//generates some type of alert
+	//Should ideally make any other tiles on the board unclickable, but I'm not sure how to do that 
+}
