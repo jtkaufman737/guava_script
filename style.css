@@ -1,6 +1,9 @@
 /*#startButton{
 
 }*/
+.tile {
+	background-color:grey;
+}
 
 #tile1a {
 	background-color:white;
