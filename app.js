@@ -1,7 +1,4 @@
-var rowA = function() {
-	document.getElementById(tile1a);
-	this.addClass('a');
-}
+
 
 var start = function () {
 	startbutton.onclick{
