@@ -2,6 +2,11 @@
 var player1 = prompt('What is your name?', 'type name'); //got working & saved to variable
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
 
+var settingUpNames = function() {
+	playerTwoBox.innerHTML= 'Player One : ' + player2;
+	playerOneBox.innerHTML= 'Player Two : ' + player1;
+}
+
 var start = function () {
 	tile1a.innerHTML='';	
 	tile1b.innerHTML='';
@@ -12,12 +17,14 @@ var start = function () {
 	tile3a.innerHTML='';
 	tile3b.innerHTML='';
 	tile3c.innerHTML='';
+	settingUpNames();
 	//Tested, and I did try to accomplish this more DRYly using a getElementById and change a whole class at once but couldnt get it working
 	//I have decided to get everything functioning then retool if time allows
 	//now need to get var player1 and player2 and append child of the player console
 	}
 
 start();
+
 // 	//onload prompts for names
 // 	//runs setnames function which prompts for names, then displays them
 // 	//makes sure innerHTML for the squares is set to ''
