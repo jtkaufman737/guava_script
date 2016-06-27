@@ -29,6 +29,14 @@ var start = function () {
 
 start();
 
+var addingClickListener = function (){
+	document.querySelectorAll('.tiles');
+	this.addEventListener('click', function(){
+		evenAndOddTurns();
+		console.log('Fn addingClickListener ran')
+	})
+}
+
 var evenAndOddTurns = function() {
     if (innerHTML == '') {
       //Oh shit, just realized my logic is close but not
