@@ -1,8 +1,20 @@
+var rowA = function() {
+	document.getElementById(tile1a);
+	this.addClass('a');
+}
+
 var start = function () {
+	startbutton.onclick{
+		document.querySelector
+	}
 	//onload prompts for names
 	//runs setnames function which prompts for names, then displays them
 	//makes sure innerHTML for the squares is set to ''
-}
+
+var settingUpTileClasses = function ()
+	//after start button is hit, will grab them by row or column
+	//then need a way to set different ids
+
 
 var setNames = function () {
 	//prompt: gets names

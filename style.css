@@ -1,5 +1,5 @@
 /*#startButton{
-	
+
 }*/
 
 #tile1a {
@@ -84,6 +84,17 @@
 	align:center;
 }
 
+.a{
+border:none;
+}
+
+.b{
+border:none;
+}
+
+.c{
+border:none;
+}
 /*OTHER THINGS I KNOW I'M GONNA NEED
 
 #playerConsole {
