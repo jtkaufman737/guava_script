@@ -95,15 +95,29 @@ border:none;
 .c{
 border:none;
 }
-/*OTHER THINGS I KNOW I'M GONNA NEED
+
 
 #playerConsole {
+	float:left;
+	height:40%;
+	width:5em;
+	background-color:blue;
+}
 
+.playerOneBox{
+	font-family:serif;
+}
+
+.playerTwoBox {
+	font-family:serif;
 }
 
 #infoSection {
-
+	float:right;
+	height:40%;
+	width:5em;
 }
+
 
 #navOptional {
 

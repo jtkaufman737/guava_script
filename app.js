@@ -12,6 +12,9 @@ var start = function () {
 	tile3a.innerHTML='';
 	tile3b.innerHTML='';
 	tile3c.innerHTML='';
+	//Tested, and I did try to accomplish this more DRYly using a getElementById and change a whole class at once but couldnt get it working
+	//I have decided to get everything functioning then retool if time allows
+	//now need to get var player1 and player2 and append child of the player console
 	}
 
 start();
